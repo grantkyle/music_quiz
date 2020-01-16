@@ -1,59 +1,60 @@
 // use getElementByClass
+// put questions in an array
 
 var myQuestions = [
     {
         question: "What singer was not a part of the infamous singing group called 'The Rat Pack'?",
-        answers: {
-            a: 'Frank Sinatra',
-            b: 'Dean Martin',
-            c: 'Sammy Davis Jr.',
-            d: 'Anderson Paak',
-        },
-        correctAnswer: 'd'
+        answers: [
+            'Frank Sinatra',
+            'Dean Martin',
+            'Sammy Davis Jr.',
+            'Anderson Paak',
+        ],
+        correctAnswer: 'Anderson Paak'
     },
 
     {
         question: "What indie band wrote the famed song 'Where Is My Mind?' while signed to the record label 4AD?",
-        answers: {
-            a: 'Pixies',
-            b: 'Wham!',
-            c: 'Boyz 2 Men',
-            d: 'Sonic Youth'
-        },
-        correctAnswer: 'a'
+        answers: [
+            'Pixies',
+            'Wham!',
+            'Boyz 2 Men',
+            'Sonic Youth'
+        ],
+        correctAnswer: 'Pixies'
     },
 
     {
         question: "Which of the following artists did NOT play at Woodstock 1969?",
-        answers: {
-            a: 'Ravi Shankar',
-            b: 'Vicente Fernandez',
-            c: 'Janis Joplin',
-            d: 'Jimi Hendrix'
-        },
-        correctAnswer: 'b'
+        answers: [
+            'Ravi Shankar',
+            'Vicente Fernandez',
+            'Janis Joplin',
+            'Jimi Hendrix'
+        ],
+        correctAnswer: 'Vicente Fernandez'
     },
 
     {
         question: "Who was the first Black American artist to win a grammy?",
-        answers: {
-            a: 'Miles Davis',
-            b: 'Michael Jackson with the Jackson 5',
-            c: 'Ella Fitzgerald',
-            d: 'Vanilla Ice'
-        },
-        correctAnswer: 'c'
+        answers: [
+            'Miles Davis',
+            'Michael Jackson with the Jackson 5',
+            'Ella Fitzgerald',
+            'Vanilla Ice'
+        ],
+        correctAnswer: 'Ella Fitzgerald'
     },
 
     {
-        question: "Which of the following is a terrifying Norweigan black metal band that you should NOT listen to lest you be cast into eternal hellfire?",
-        answers: {
-            a: 'Chainsmokers',
-            b: 'Buena Vista Social Club',
-            c: 'Sade',
-            d: 'Gorgoroth'
-        },
-        correctAnswer: 'd'
+        question: "Which of the following is a controversial Norweigan black metal band?",
+        answers: [
+            'Blood Incantation',
+            'Infant Annihilator',
+            'James Taylor',
+            'Gorgoroth'
+        ],
+        correctAnswer: 'Gorgoroth'
     }
 
 ];
