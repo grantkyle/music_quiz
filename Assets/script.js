@@ -139,14 +139,11 @@ function endGame() {
     //check to store high scores
 }
 
-//////// stringify then parse is option
-/////// then appendChild to front end
-
 function saveScore() {
     var userInitials = prompt("Enter Name Here");
 
     var userObj = {
-        name: userInitials,
+        name: userInitials + "  ",
         score: numCorrect
     };
 
@@ -163,15 +160,13 @@ function saveScore() {
     localStorage.setItem("userInfo", JSON.stringify(userArr));
 
 
-    for (var end = userArr.length - 1, userCount = 1; end > -1; end-- , userCount) {
+    for (var end = userArr.length - 1, userCount = 1; end > -1; end-- , userCount++) {
 
-        if (userArr.length === 5) { break; }
-        $highScoresDiv.innerHTML = (userArr[end].score + " - " + userArr.name);
+        if (userCount === 5) {
+            break;
+        }
+
+        $highScoresDiv.innerHTML += (userArr[end].score + " - " + userArr[end].name);
     }
 
-    // localStorage.setItem(userInitials, numCorrect)
-    // $highScoresDiv.innerHTML = (numCorrect + " - " + userInitials)
-    // only save highest 10 scores
-    // store all scores in the array
-    // display 10 scores 
 }
